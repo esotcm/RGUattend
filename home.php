@@ -68,11 +68,11 @@
         <div class="col-md-2">
             <h2 class="dark">Attendance:
               <?php
-              $sql = ("SELECT COUNT(*) FROM cm3028");
-              $rs = $conn->query($sql);
+              $sql = "SELECT COUNT(*) FROM cm3028";
+              $result = $conn->query($sql);
               //-----------^  need to run query here
 
-              $result = $result->fetch_array($rs);
+              $result = $result->fetch_array($result);
               //here you can echo the result of query
               echo "{$result[0]}";
 
