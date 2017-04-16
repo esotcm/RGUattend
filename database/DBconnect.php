@@ -1,7 +1,6 @@
 <?php
 
-$serverName = "
-eu-cdbr-azure-west-d.cloudapp.net";
+$serverName = "eu-cdbr-azure-west-d.cloudapp.net";
 $DB_name = "b50e4e852f567b";
 $DB_password = "434b386b";
 $DB = "attendants";
