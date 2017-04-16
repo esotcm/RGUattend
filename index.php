@@ -27,12 +27,28 @@
             background-color: gray;
             border: 1px solid black;
         }
+        .list-overflow[overflow] {
+            position: absolute;
+            bottom: 0;
+        }
     </style>
     <img src="welcome.jpg" height="56" width="261"/>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 <body>
 <h1>Welcome to the mobile web</h1>
+<amp-list src="https://data.com/articles.json?ref=CANONICAL_URL"
+          width=300 height=200 layout=responsive>
+    <template type="amp-mustache">
+        <div>
+            <amp-img src="{{imageUrl}}" width=50 height=50></amp-img>
+            {{title}}
+        </div>
+    </template>
+    <div overflow role=button aria-label="Show more" class="list-overflow">
+        Show more
+    </div>
+</amp-list>
 <?php
 session_start();
 include ("Database/DBConnect.php");
@@ -44,8 +60,8 @@ $studentID = $row['studentID'];
 $Student_Name = $row['Student_Name'];
 $attendance = $row['attendance'];
 echo
-   " <h2>ALL STUDENTS</h2>
- <li>{$studentID} {$Student_Name} Attendance: {$attendance} </li>"
+
+ "<li>{$studentID} {$Student_Name} Attendance: {$attendance} </li>"
     
 ;
 }
