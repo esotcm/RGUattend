@@ -68,11 +68,13 @@
         <div class="col-md-2">
             <h2 class="dark">Attendance:
               <?php
-                $sql = "SELECT COUNT(*) FROM students";
-                $result = $conn->query($sql);
-                while($row = $result->fetch_array()){
-                    $noobs = $row['noobs'];
-                    echo "<ul>{$noobs}</ul>";
+              $sql = ("SELECT COUNT(*) FROM project_directory");
+              $rs = $conn->query($sql);
+              //-----------^  need to run query here
+
+              $result = $result->fetch_array($rs);
+              //here you can echo the result of query
+              echo $result[0];
                 }
 
 
