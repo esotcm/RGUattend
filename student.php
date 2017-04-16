@@ -6,7 +6,7 @@
  * Time: 20:14
  */
 session_start();
-include ("Database/LoginSystem/DB_Connect.php");
+include ("database/DBConnect.php");
 if (isset($_GET['ID'])) {
 //    echo $_GET['ID'];
     $_selected_student = $_GET['ID'];
