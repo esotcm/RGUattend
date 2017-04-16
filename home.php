@@ -81,7 +81,7 @@
 
               $num2 = $result->fetch_array();
               //here you can echo the result of query
-              echo "{$num2[0]} ";
+              echo "{$num[0]} / {$num2[0]} ";
 
 
 
