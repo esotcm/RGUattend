@@ -24,7 +24,7 @@
 <img src="welcome.jpg"></img>
 <div class="container">
     <div class="row">
-        <h1> WELCOME TO CM3028</h1>
+        <h1 class="dark"> WELCOME TO CM3028</h1>
         <div class="col-md-5">
             <h2 class="green">signed in</h2>
             <?php

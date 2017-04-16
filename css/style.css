@@ -1,4 +1,4 @@
 body {font-family: 'Open Sans', sans-serif;}
-h1 {font-family: 'Open Sans', sans-serif; color: darkgreen;}
+.dark {font-family: 'Open Sans', sans-serif; color: darkgreen;}
 .green {font-family: 'Open Sans', sans-serif; color:green;}
-.red {font-family: 'Open Sans', sans-serif; color:red;}
+.red {font-family: 'Open Sans', sans-serif; color:darkred;}
