@@ -36,6 +36,18 @@
 <?php
 session_start();
 include ("../Database/DB_Connect.php");
+
+            $sql = "SELECT * FROM CM3028";
+            $result = $conn->query($sql);
+while($row = $result->fetch_array()) {
+$studentID = $row['studentID'];
+$student_name = $row['student_name'];
+$attendance = $row['attendance'];
+echo "<ul class='a'>
+    <li><a href='index.php/?ID={$studentID}'>{$student_Name}</a> Attendance: {$attendance}. </li>
+</ul>";
+}
+
 ?>
 </body>
 </html>
