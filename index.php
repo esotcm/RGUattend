@@ -57,7 +57,7 @@ $Student_Name = $row['Student_Name'];
 $attendance = $row['attendance'];
 echo
 
- "<amp-list src:'student.php/?ID={$studentID}' {$Student_Name} Attendance: {$attendance} </amp-list>"
+ "<li> <a href='student.php/?ID={$studentID}</a>' {$Student_Name} Attendance: {$attendance} </li>"
     
 ;
 }
