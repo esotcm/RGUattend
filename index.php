@@ -50,7 +50,7 @@ $Student_Name = $row['Student_Name'];
 $attendance = $row['attendance'];
 echo
 
- "<amp-list src:'student.php/?=ID={$studentID}' {$Student_Name} Attendance: {$attendance} </amp-list>"
+ "<amp-list src:'student.php/?ID={$studentID}' {$Student_Name} Attendance: {$attendance} </amp-list>"
     
 ;
 }
