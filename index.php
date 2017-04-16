@@ -37,11 +37,11 @@
 session_start();
 include ("Database/DBConnect.php");
 
-            $sql = "SELECT * FROM CM3028";
+            $sql = "SELECT * FROM cm3028";
             $result = $conn->query($sql);
 while($row = $result->fetch_array()) {
 $studentID = $row['studentID'];
-$student_name = $row['student_name'];
+$Student_Name = $row['student_name'];
 $attendance = $row['attendance'];
 echo "<ul class='a'>
     <li><a href='student.php/?ID={$studentID}'>{$student_name}</a> Attendance: {$attendance}. </li>

@@ -14,7 +14,7 @@ if (isset($_GET['ID'])) {
     // Fallback behaviour
     echo "Uh Oh, this club seems to be missing, please go back and pick another club.";
 }
-$sql = "SELECT * FROM CM3028 where studentID ='" . $_selected_student . "'";
+$sql = "SELECT * FROM cm3028 where studentID ='" . $_selected_student . "'";
 $result = $conn->query($sql);
 while($row = $result->fetch_array())
 {
@@ -25,7 +25,6 @@ while($row = $result->fetch_array())
         <article>
             Title: {$_studentID} \n
             Genre: {$_student_name} \n
-            Contact Us: \n
             Attending: {$_attending} \n
         </article>";
 }
