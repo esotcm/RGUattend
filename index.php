@@ -41,7 +41,7 @@ include ("Database/DBConnect.php");
             $result = $conn->query($sql);
 while($row = $result->fetch_array()) {
 $studentID = $row['studentID'];
-$Student_Name = $row['student_name'];
+$Student_Name = $row['Student_Name'];
 $attendance = $row['attendance'];
 echo
    " <li>{$studentID} {$Student_Name} Attendance: {$attendance} </li>"
