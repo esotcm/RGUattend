@@ -34,7 +34,7 @@
 <h1>Welcome to the mobile web</h1>
 <?php
 session_start();
-include ("Database/DB_Connect.php");
+include ("Database/DBConnect.php");
 
             $sql = "SELECT * FROM CM3028";
             $result = $conn->query($sql);
