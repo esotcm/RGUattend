@@ -31,11 +31,11 @@
             $result = $conn->query($sql);
             while($row = $result->fetch_array()) {
                 $studentID = $row['studentID'];
-                $Student_Name = $row['Student_Name'];
-                $date = $row['date'];
+                $student_Name = $row['student_Name'];
+
                 echo
 
-                "<ul><li> {$studentID} {$Student_Name} Attendance: {$date} </ul></li>"
+                "<ul><li> {$studentID} {$student_Name} </ul></li>"
 
                 ;
             }
