@@ -66,7 +66,12 @@
             ?>
         </div>
         <div class="col-md-2">
-            <p class="dark">Attendance:</p>
+            <h2 class="dark">Attendance:
+              <?php
+                $sql = "SELECT COUNT(*) FROM students as total"
+              echo "{$total}";
+               ?>
+            </h2>
         </div>
     </div>
 </div>
