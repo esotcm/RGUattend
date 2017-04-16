@@ -35,7 +35,7 @@
 <amp-img src="welcome.jpg" alt="Welcome" height="200" width="400"></amp-img>
 <?php
 session_start();
-include ("../Database/DB_Connect.php");
+include ("Database/DB_Connect.php");
 
             $sql = "SELECT * FROM CM3028";
             $result = $conn->query($sql);
