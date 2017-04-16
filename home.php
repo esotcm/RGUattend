@@ -65,6 +65,9 @@
 
             ?>
         </div>
+        <div class="col-md-2">
+            <p class="dark">Attendance:</p>
+        </div>
     </div>
 </div>
 
