@@ -29,3 +29,4 @@ while($row = $result->fetch_array())
             Attending: {$_attending} \n
         </article>";
 }
+
