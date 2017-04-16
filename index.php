@@ -32,7 +32,6 @@
 </head>
 <body>
 <h1>Welcome to the mobile web</h1>
-<amp-img src="welcome.jpg" alt="Welcome" height="200" width="400"></amp-img>
 <?php
 session_start();
 include ("Database/DB_Connect.php");
@@ -44,7 +43,7 @@ $studentID = $row['studentID'];
 $student_name = $row['student_name'];
 $attendance = $row['attendance'];
 echo "<ul class='a'>
-    <li><a href='index.php/?ID={$studentID}'>{$student_Name}</a> Attendance: {$attendance}. </li>
+    <li><a href='index.php/?ID={$studentID}'>{$student_name}</a> Attendance: {$attendance}. </li>
 </ul>";
 }
 
