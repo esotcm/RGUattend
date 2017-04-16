@@ -44,7 +44,7 @@ $studentID = $row['studentID'];
 $Student_Name = $row['student_name'];
 $attendance = $row['attendance'];
 echo "<ul class='a'>
-    <li><a href='student.php/?ID={$studentID}'>{$Student_Name}</a> Attendance: {$attendance}. </li>
+    <li><link rel=\"canonical\" href=\'student.php/?ID={$studentID}'> NAME: {$Student_Name}</a> Attendance: {$attendance}> </li>
     
 </ul>";
 }
