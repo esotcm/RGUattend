@@ -71,7 +71,7 @@
                 $sql = "SELECT COUNT(*) FROM students";
                 $result = $conn->query($sql);
                 while($row = $result->fetch_array()){
-                    $noobs = $row['noobs']
+                    $noobs = $row['noobs'];
                     echo "<ul>{$noobs}</ul>";
                 }
 
