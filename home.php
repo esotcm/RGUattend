@@ -21,7 +21,7 @@
     <![endif]-->
 </head>
 <body>
-<img src="welcome.jpg"></img>
+<img src="welcome.jpg">
 <div class="container">
     <div class="row">
         <h1 class="dark"> WELCOME TO CM3028</h1>
@@ -68,8 +68,9 @@
         <div class="col-md-2">
             <h2 class="dark">Attendance:
               <?php
-                $sql = "SELECT COUNT(*) FROM students as total"
-              echo "{$total}";
+                $sql = "SELECT COUNT(*) FROM students";
+                $result = $conn->query($sql);
+              echo "{$result}";
                ?>
             </h2>
         </div>
