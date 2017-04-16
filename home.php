@@ -31,7 +31,7 @@
             session_start();
             include ("Database/DBConnect.php");
 
-            $sql = "SELECT * FROM attendees";
+            $sql = "SELECT * FROM attending";
             $result = $conn->query($sql);
             while($row = $result->fetch_array()) {
                 $studentID = $row['studentID'];
