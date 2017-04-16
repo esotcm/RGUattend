@@ -70,8 +70,12 @@
               <?php
                 $sql = "SELECT COUNT(*) FROM students";
                 $result = $conn->query($sql);
-                $noobs = $result;
-              echo "{$noobs}";
+                while($row = $result->fetch_array()){
+                    $noobs = $row['noobs']
+                    echo "<ul>{$noobs}</ul>";
+                }
+
+
                ?>
             </h2>
         </div>
