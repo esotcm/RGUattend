@@ -68,7 +68,7 @@
         <div class="col-md-2">
             <h2 class="dark">Attendance:
               <?php
-              $sql = "SELECT COUNT(*) FROM attendees";
+              $sql = "SELECT COUNT(*) FROM attending";
               $result = $conn->query($sql);
               //-----------^  need to run query here
 
