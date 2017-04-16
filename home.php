@@ -68,14 +68,14 @@
         <div class="col-md-2">
             <h2 class="dark">Attendance:
               <?php
-              $sql = ("SELECT COUNT(*) FROM project_directory");
+              $sql = ("SELECT COUNT(*) FROM cm3028");
               $rs = $conn->query($sql);
               //-----------^  need to run query here
 
               $result = $result->fetch_array($rs);
               //here you can echo the result of query
-              echo $result[0];
-                }
+              echo "{$result[0]}";
+
 
 
                ?>
