@@ -26,7 +26,7 @@
     <div class="row">
         <h1> WELCOME TO CM3028</h1>
         <div class="col-md-5">
-            <h2>signed in</h2>
+            <h2 class="green">signed in</h2>
             <?php
             session_start();
             include ("Database/DBConnect.php");
@@ -47,7 +47,7 @@
             ?>
         </div>
         <div class="col-md-5">
-            <h2>students</h2>
+            <h2 class="red">students</h2>
             <?php
 
             $sql = "SELECT * FROM cm3028";
