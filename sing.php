@@ -1,5 +1,5 @@
 <?php
-include("database/DB_Connect.php");
+include("database/DBConnect.php");
 $_studentID = $_POST["studentID"];
 $sql = "INSERT INTO attending (studentID) VALUES ('$_studentID')";
 if(mysqli_query($conn, $sql)){
