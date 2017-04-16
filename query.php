@@ -7,7 +7,7 @@
 session_start();
 include ("Database/DBConnect.php");
 
-    echo '<p>. $_POST["ID"]. </p>';
+    echo "<p>". $_POST["ID"]. "</p>";
 
 ?>
 
