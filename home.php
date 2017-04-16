@@ -72,9 +72,9 @@
               $result = $conn->query($sql);
               //-----------^  need to run query here
 
-              $result = $result->fetch_array($result);
+              $num = $result->fetch_array();
               //here you can echo the result of query
-              echo "{$result[0]}";
+              echo "{$num[0]}";
 
 
 
