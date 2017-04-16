@@ -37,18 +37,7 @@
 </head>
 <body>
 <h1>Welcome to the mobile web</h1>
-<amp-list src="https://data.com/articles.json?ref=CANONICAL_URL"
-          width=300 height=200 layout=responsive>
-    <template type="amp-mustache">
-        <div>
-            <amp-img src="{{imageUrl}}" width=50 height=50></amp-img>
-            {{title}}
-        </div>
-    </template>
-    <div overflow role=button aria-label="Show more" class="list-overflow">
-        Show more
-    </div>
-</amp-list>
+
 <?php
 session_start();
 include ("Database/DBConnect.php");
@@ -61,7 +50,7 @@ $Student_Name = $row['Student_Name'];
 $attendance = $row['attendance'];
 echo
 
- "<li>{$studentID} {$Student_Name} Attendance: {$attendance} </li>"
+ "<amp-list src:'student.php/?=ID={$studentID}' {$Student_Name} Attendance: {$attendance} </amp-list>"
     
 ;
 }
