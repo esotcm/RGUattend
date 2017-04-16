@@ -54,10 +54,10 @@ include ("Database/DBConnect.php");
 while($row = $result->fetch_array()) {
 $studentID = $row['studentID'];
 $Student_Name = $row['Student_Name'];
-$attendance = $row['attendance'];
+$Attendance = $row['Attendance'];
 echo
 
- "<li> <a href='student.php/?ID={$studentID}'</a> {$Student_Name} Attendance: {$attendance} </li>"
+ "<li> {$studentID} {$Student_Name} Attendance: {$Attendance} </li>"
     
 ;
 }
