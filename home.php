@@ -68,13 +68,20 @@
         <div class="col-md-2">
             <h2 class="dark">Attendance:
               <?php
-              $sql = "SELECT COUNT(*) FROM cm3028";
+              $sql = "SELECT COUNT(*) FROM attendees";
               $result = $conn->query($sql);
               //-----------^  need to run query here
 
               $num = $result->fetch_array();
               //here you can echo the result of query
-              echo "{$num[0]}";
+
+              $sql = "SELECT COUNT(*) FROM cm3028";
+              $result = $conn->query($sql);
+              //-----------^  need to run query here
+
+              $num2 = $result->fetch_array();
+              //here you can echo the result of query
+              echo "{$num2[0]} ";
 
 
 
