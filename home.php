@@ -18,6 +18,7 @@
     <![endif]-->
 </head>
 <body>
+<img src="welcome.jpg"></img>
 <div class="container">
     <div class="row">
         <h1> WELCOME TO CM3028</h1>

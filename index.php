@@ -17,6 +17,7 @@
         ]
       }
     </script>
+    <script async custom-element="amp-live-list" src="https://cdn.ampproject.org/v0/amp-live-list-0.1.js"></script>
     <style amp-custom>
         /* any custom style goes here */
         body {
