@@ -43,7 +43,7 @@ $studentID = $row['studentID'];
 $student_name = $row['student_name'];
 $attendance = $row['attendance'];
 echo "<ul class='a'>
-    <li><a href='index.php/?ID={$studentID}'>{$student_name}</a> Attendance: {$attendance}. </li>
+    <li><a href='student.php/?ID={$studentID}'>{$student_name}</a> Attendance: {$attendance}. </li>
 </ul>";
 }
 
