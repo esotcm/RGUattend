@@ -44,7 +44,7 @@ $studentID = $row['studentID'];
 $Student_Name = $row['student_name'];
 $attendance = $row['attendance'];
 echo
-   " <li>{$studentID}  NAME: {$Student_Name}</a> Attendance: {$attendance} </li>"
+   " <li>{$studentID} {$Student_Name} Attendance: {$attendance} </li>"
     
 ;
 }
