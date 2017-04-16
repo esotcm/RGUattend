@@ -22,14 +22,29 @@
     <div class="row">
         <h1> WELCOME TO CM3028</h1>
         <div class="col-md-6">
-            <h2>attendees</h2>
+            <h2>signed in</h2>
+            <?php
+            session_start();
+            include ("Database/DBConnect.php");
 
+            $sql = "SELECT * FROM attendees";
+            $result = $conn->query($sql);
+            while($row = $result->fetch_array()) {
+                $studentID = $row['studentID'];
+                $Student_Name = $row['Student_Name'];
+                $date = $row['date'];
+                echo
+
+                "<ul><li> {$studentID} {$Student_Name} Attendance: {$date} </ul></li>"
+
+                ;
+            }
+
+            ?>
         </div>
         <div class="col-md-6">
             <h2>students</h2>
             <?php
-            session_start();
-            include ("Database/DBConnect.php");
 
             $sql = "SELECT * FROM cm3028";
             $result = $conn->query($sql);
