@@ -23,6 +23,7 @@
             background-color: purple;
         }
         amp-img {
+
             background-color: gray;
             border: 1px solid black;
         }
@@ -44,6 +45,7 @@ $student_name = $row['student_name'];
 $attendance = $row['attendance'];
 echo "<ul class='a'>
     <li><a href='student.php/?ID={$studentID}'>{$student_name}</a> Attendance: {$attendance}. </li>
+    
 </ul>";
 }
 
