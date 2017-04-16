@@ -70,7 +70,8 @@
               <?php
                 $sql = "SELECT COUNT(*) FROM students";
                 $result = $conn->query($sql);
-              echo "{$result}";
+                $noobs = $result;
+              echo "{$noobs}";
                ?>
             </h2>
         </div>
