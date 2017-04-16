@@ -37,7 +37,14 @@
 </head>
 <body>
 <h1>Welcome to the mobile web</h1>
-
+<amp-live-list id="my-live-list" data-poll-interval="15000" data-max-items-per-page="20">
+    <div update class="outer-container">
+        <div class="inner-container">
+            <button class="btn" on="tap:my-live-list.update">Click me!</button>
+        </div>
+    </div>
+    <div items></div>
+</amp-live-list>
 <?php
 session_start();
 include ("Database/DBConnect.php");
