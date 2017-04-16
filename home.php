@@ -21,7 +21,7 @@
 <div class="container">
     <div class="row">
         <h1> WELCOME TO CM3028</h1>
-        <div class="col-md-6">
+        <div class="col-md-5">
             <h2>signed in</h2>
             <?php
             session_start();
@@ -42,7 +42,7 @@
 
             ?>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
             <h2>students</h2>
             <?php
 
