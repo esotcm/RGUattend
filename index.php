@@ -57,7 +57,7 @@ $Student_Name = $row['Student_Name'];
 $attendance = $row['attendance'];
 echo
 
- "<li> <a href='student.php/?ID={$studentID}</a>' {$Student_Name} Attendance: {$attendance} </li>"
+ "<li> <a href='student.php/?ID={$studentID}'</a> {$Student_Name} Attendance: {$attendance} </li>"
     
 ;
 }
